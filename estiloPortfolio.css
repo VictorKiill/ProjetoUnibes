@@ -1,0 +1,78 @@
+.conteudo .links {
+    background-color: #fff;
+    margin: 0.625rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    padding: 1.25rem 1.25rem;
+    border-radius: 1.87rem;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.16);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.conteudo .links a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+
+.vl {
+    height: 1rem;
+    border-left: 1px solid #000;
+}
+
+.conteudo .habilidades {
+    background-color: #fff;
+    margin: 0.625rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    padding: 1.25rem 1.25rem;
+    border-radius: 1.87rem;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.16);
+}
+.conteudo .habilidades .grafico {
+    display: grid;
+    margin: auto;
+    height: 20rem;
+    width: 75%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.conteudo .habilidades .grafico > div {
+    border: #000 solid 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.barra {
+    box-sizing: border-box;
+    background-color: #476c8a;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    height: 50%;
+    width: 100%;
+}
+
+.meio1 {
+    margin-left: -2px;
+}
+
+.meio2 {
+    margin-left: -4px;
+}
+
+.ponta {
+    width: 50%;
+}
+
+.conteudo .habilidades .grafico > div.legenda {
+    border: none;
+    justify-content: flex-start;
+    padding-left: 0.5rem;
+    font-weight: 700;
+}

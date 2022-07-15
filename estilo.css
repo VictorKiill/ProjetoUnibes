@@ -24,8 +24,8 @@ body{
     margin: 0;
     display: grid;
     font-family: Roboto, Arial, Helvetica, sans-serif;
-    grid-template-columns: 300px auto;
-    grid-auto-rows: 1fr 50px;
+    grid-template-columns: 18.75rem auto;
+    grid-auto-rows: 1fr 3.125rem;
     grid-template-areas: 
         'menu conteudo'
         'rodape rodape';
@@ -36,12 +36,12 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 3.125rem;
     background-color: #476c8a;
 }
 
 #menu .logo {
-    height: 200px;
+    height: 12.5rem;
 
 }
 
@@ -50,16 +50,16 @@ body{
 }
 
 #menu .titulo h1{
-    font-size: 1.7em;
-    margin-bottom: 10px;
+    font-size: 1.7rem;
+    margin-bottom: 0.625rem;
     font-weight: 700;
 }
 
 #menu .titulo h2{
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: 700;
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 
 #menu .nav {
@@ -73,10 +73,10 @@ body{
     text-decoration: none;
     text-align: center;
     color: #000;
-    padding: 10px 0;
-    font-size: 1.5em;
+    padding: 0.625rem 0;
+    font-size: 1.5rem;
     font-weight: 500;
-    width: 300px;
+    width: 18.75rem;
     transition: all 0.7s ease;
 }
 
@@ -85,21 +85,23 @@ body{
 }
 
 #menu .nav .menu-item img{
-    margin-right: 5px;
-    height: 20px;
+    margin-right: 0.31rem;
+    height: 1.25rem;
 }
 
 /* Configurações do conteúdo */
 .conteudo {
-    padding-left: 30px;
+    padding-left: 1.87rem;
     box-shadow: inset 5px 0px 4px rgba(0, 0, 0, 0.16);
 }
 
 .conteudo .info-1 {
     background-color: #fff;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 30px;
+    margin: 0.625rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    padding: 1.25rem;
+    border-radius: 1.87rem;
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.16);
 }
 
@@ -108,14 +110,16 @@ body{
     flex-wrap: wrap;
     color: #eaeaea;
     justify-content: center;
+    margin: 0.625rem;
+    margin-right: 1rem;
 }
 
 .conteudo .info-2 .item-info {
-    height: 200px;
-    width: 350px;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 30px;
+    height: 12.5rem;
+    width: 21.87rem;
+    margin: 0.625rem;
+    padding: 1.25rem;
+    border-radius: 1.87rem;
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.16);
 }
 
@@ -127,55 +131,19 @@ body{
     font-weight: 500;
 }
 
-.conteudo .info-2 .contato{
-    width: 100%;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 30px;
-    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.16);
-    background: linear-gradient(149deg, #4279a3 30%, #759ebd 100%);
-}
-
-.conteudo .info-2 .video{
+.conteudo .video{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 30px;
-    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.16);
-    background: linear-gradient(149deg, #4279a3 30%, #759ebd 100%);
+    margin: 1.25rem 0;
 }
 
-.conteudo .info-2 .contato form div > *{
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.conteudo .info-2 .contato form button {
-    background-color: #b1bec9;
-    border: none;
-    border-radius: 10px;
-    height: 25px;
-    width: 70px;
-    font-family: inherit;
-    font-weight: 700;
-    cursor: pointer;
-}
-
-.conteudo .info-2 .contato form input,textarea {
-    border: none;
-    border-radius: 5px;
-    outline: none;
-    padding: 5px;
-}
-
-
-.conteudo .info-2 .contato form button:active {
-    background-color: #1d364b;
-    color: #fff;
+.conteudo .video .player {
+    max-width: 30rem;
+    width: calc(100% - 2rem);
+    height: 17rem;
 }
 
 .conteudo .info-2 .item-info:nth-child(1){
@@ -213,7 +181,7 @@ footer {
     
     body {
         grid-template-columns: auto;
-        grid-auto-rows: 250px 1fr 50px;
+        grid-auto-rows: 15.62rem 1fr 3.12rem;
         grid-template-areas: 
         'menu'
         'conteudo'
@@ -222,8 +190,8 @@ footer {
 
     #menu {
         display: grid;
-        grid-template-columns: 200px 1fr;
-        grid-template-rows: 200px 50px;
+        grid-template-columns: 12.5rem 1fr;
+        grid-template-rows: 12.5rem 3.12rem;
         padding-top: 0;
     }
 
@@ -235,13 +203,12 @@ footer {
     }
 
     #menu .logo{
-        height: calc(100% - 10px);
-        margin-left: 10px;
+        height: calc(100% - 1.25rem);
+        margin-left: 1.25rem;
     }
 
     .conteudo {
-        margin-left: 0;
-        padding: 10px;
+        padding: 1.25rem;
         box-shadow: inset 0px 5px 4px rgba(0, 0, 0, 0.16);
     }
 
@@ -251,6 +218,10 @@ footer {
     
     .conteudo .info-2 .item-info {
         width: auto;
-        padding: 20px;
+    }
+
+    .conteudo .video .player {
+        width: calc(100% - 2rem);
+        height: 17rem;
     }
 }
